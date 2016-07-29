@@ -17,8 +17,8 @@
     "url": "git://github.com/node-modules/assert-extends.git"
   },
   "scripts": {
-    "test": "egg-bin test",
-    "test-cov": "egg-bin cov",
+    "test": "egg-bin test --require intelli-espower-loader",
+    "test-cov": "egg-bin cov --require intelli-espower-loader",
     "ci": "npm run lint && npm run test-cov",
     "lint": "eslint --fix test *.js"
   },
@@ -30,7 +30,8 @@
     "egg-bin": "^1.0.2",
     "egg-ci": "^1.0.3",
     "eslint": "^3.1.1",
-    "eslint-config-egg": "^3.1.0"
+    "eslint-config-egg": "^3.1.0",
+    "intelli-espower-loader": "^1.0.1"
   },
   "engines": {
     "node": ">= 4.0.0"

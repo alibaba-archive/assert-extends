@@ -7,6 +7,7 @@ describe('assert extends', () => {
     it('should assert pass', () => {
       assert(1);
       assert(true);
+      // assert(1 === 2);
     });
   });
 
