@@ -10,32 +10,6 @@ describe('assert extends', () => {
     });
   });
 
-  describe('match()', () => {
-    it('should match with string', () => {
-      assert.match('foo', 'f');
-      assert.match('foo hi bar', 'hi');
-
-      assert.throws(() => {
-        assert.match('foo hi bar', 'hihi');
-      }, /Expect "foo hi bar" match "hihi"/);
-    });
-
-    it('should match with RegExp', () => {
-      assert.match('foo', /^f/);
-      assert.match('foo hi bar', /hi/);
-
-      assert.throws(() => {
-        assert.match('foo hi bar', /hihi/);
-      }, /Expect "foo hi bar" match \/hihi\//);
-    });
-
-    it('should throw TypeError when expected invalid', () => {
-      assert.throws(() => {
-        assert.match('foo', 1);
-      }, /^TypeError: expected value should be RegExp or String, but got 1$/);
-    });
-  });
-
   describe('asyncThrows()', () => {
     it('should work with generator', () => {
       return assert.asyncThrows(function* () {
@@ -84,7 +58,7 @@ describe('assert extends', () => {
         return err.message === 'mock';
       }).catch(err => {
         assert.equal(err.name, 'Error');
-        assert.match(err.message, 'mock error');
+        assert(err.message === 'mock error');
       });
     });
 

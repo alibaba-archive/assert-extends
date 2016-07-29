@@ -1,7 +1,7 @@
 {
   "name": "assert-extends",
   "version": "1.0.0",
-  "description": "assert module extends",
+  "description": "power-assert module extends",
   "keywords": [
     "assert",
     "asyncThrows"
@@ -23,7 +23,8 @@
     "lint": "eslint --fix test *.js"
   },
   "dependencies": {
-    "co": "^4.6.0"
+    "co": "^4.6.0",
+    "power-assert": "^1.4.1"
   },
   "devDependencies": {
     "egg-bin": "^1.0.2",

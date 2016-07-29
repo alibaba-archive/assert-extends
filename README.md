@@ -20,12 +20,13 @@
 [download-image]: https://img.shields.io/npm/dm/assert-extends.svg?style=flat-square
 [download-url]: https://npmjs.org/package/assert-extends
 
-`assert` module extends.
+`power-assert` module extends.
 
-- `assert.match(value, expected[, message])`
 - `assert.asyncThrows(block[, error][, message])`
 
 ## Usage
+
+- Add `mocha --require intelli-espower-loader` to your test scripts.
 
 ### assert throws with async function
 
