@@ -1,0 +1,39 @@
+{
+  "name": "assert-extends",
+  "version": "1.0.0",
+  "description": "assert module extends",
+  "keywords": [
+    "assert",
+    "asyncThrows"
+  ],
+  "author": "fengmk2 <m@fengmk2.com> (https://fengmk2.com)",
+  "homepage": "http://github.com/node-modules/assert-extends",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/node-modules/assert-extends.git"
+  },
+  "scripts": {
+    "test": "egg-bin test",
+    "test-cov": "egg-bin cov",
+    "ci": "npm run lint && npm run test-cov",
+    "lint": "eslint --fix test *.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "egg-bin": "^1.0.2",
+    "egg-ci": "^1.0.3",
+    "eslint": "^3.1.1",
+    "eslint-config-egg": "^3.1.0"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "ci": {
+    "version": "4, 6"
+  },
+  "license": "MIT"
+}
