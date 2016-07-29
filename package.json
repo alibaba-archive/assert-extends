@@ -22,7 +22,9 @@
     "ci": "npm run lint && npm run test-cov",
     "lint": "eslint --fix test *.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "co": "^4.6.0"
+  },
   "devDependencies": {
     "egg-bin": "^1.0.2",
     "egg-ci": "^1.0.3",
