@@ -24,6 +24,8 @@
 
 - `assert.asyncThrows(block[, error][, message])`
 
+Note: use [assert.rejects(asyncFn, error, message)](https://nodejs.org/api/assert.html#assert_assert_rejects_asyncfn_error_message) instead of this module at Node.js 10.x+.
+
 ## Usage
 
 - Add `mocha --require intelli-espower-loader` to your test scripts.
